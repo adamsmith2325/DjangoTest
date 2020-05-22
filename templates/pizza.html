@@ -1,0 +1,20 @@
+<h1> Want to order a pizza to Adam's house?</h1>
+
+<h2>Credit Info</h2>
+
+
+<form action = "/orderPizza/" method ="POST">{% csrf_token %}
+    
+    <h3>Card Number</h3>
+    <input type="number" name = "cardNumber"/>
+    <h3>Expiration Month (MM)</h3>
+    <input type ="number" name = "Month"/>
+    <h3>Expiration Year (YY)</h3>
+    <input type ="number" name = "Year"/>
+    <h3> Security Code</h3>
+    <input type ="number" name = "securityCode"/>
+    <h3> Billing Zip Code</h3>
+    <input type ="number" name = "zip"/>
+    <p></p>
+    <input type="submit" value = "Order Pizza"/>
+</form>
